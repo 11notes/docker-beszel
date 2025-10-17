@@ -1,0 +1,24 @@
+{
+  "image": "11notes/beszel",
+  "name": "beszel",
+  "root": "/beszel",
+  "semver": {
+    "version": "0.13.2"
+  },
+  "readme": {
+    "description": "Run beszel rootless and distroless.",
+    "introduction": "[Beszel](https://github.com/henrygd/beszel) (created by [henrygd](https://github.com/henrygd)) is a lightweight server monitoring platform that includes Docker statistics, historical data, and alert functions. It has a friendly web interface, simple configuration, and is ready to use out of the box. It supports automatic backup, multi-user, OAuth authentication, and API access.",
+    "built": {
+      "beszel": "https://github.com/henrygd/beszel"
+    },
+    "distroless": {
+      "layers": [
+        "11notes/distroless",
+        "11notes/distroless:localhealth"
+      ]
+    },
+    "comparison": {
+      "image": "henrygd/beszel"
+    }
+  }
+}
