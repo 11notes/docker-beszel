@@ -1,5 +1,6 @@
 {
   "image": "11notes/beszel",
+  "platform":"amd64,arm64",
   "name": "beszel",
   "root": "/beszel",
   "semver": {
