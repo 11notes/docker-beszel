@@ -1,10 +1,10 @@
 {
   "image": "11notes/beszel",
-  "platform":"amd64,arm64",
+  "platform": "amd64,arm64",
   "name": "beszel",
   "root": "/beszel",
   "semver": {
-    "version": "0.13.2"
+    "version": "0.107.67"
   },
   "readme": {
     "description": "Run beszel rootless and distroless.",
