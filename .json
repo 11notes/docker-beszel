@@ -4,7 +4,7 @@
   "name": "beszel",
   "root": "/beszel",
   "semver": {
-    "version": "0.14.1"
+    "version": "0.15.0"
   },
   "readme": {
     "description": "Run beszel rootless and distroless.",
