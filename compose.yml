@@ -9,7 +9,7 @@ x-lockdown: &lockdown
 
 services:
   hub:
-    image: "11notes/beszel:0.15.1"
+    image: "11notes/beszel:0.15.2"
     <<: *lockdown
     environment:
       TZ: "Europe/Zurich"
