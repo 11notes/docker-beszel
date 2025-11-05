@@ -32,7 +32,7 @@ Below you find a comparison between this image and the most used or original one
 
 | **image** | **size on disk** | **init default as** | **[distroless](https://github.com/11notes/RTFM/blob/main/linux/container/image/distroless.md)** | supported architectures
 | ---: | ---: | :---: | :---: | :---: |
-| 11notes/beszel:0.15.3 | 20MB | 1000:1000 | ✅ | amd64, arm64 |
+| 11notes/beszel:0.15.4 | 20MB | 1000:1000 | ✅ | amd64, arm64 |
 | henrygd/beszel | 30MB | 1000:1000 | ✅ | amd64, arm64, armv7 |
 
 # VOLUMES 📁
@@ -51,7 +51,7 @@ x-lockdown: &lockdown
 
 services:
   hub:
-    image: "11notes/beszel:0.15.3"
+    image: "11notes/beszel:0.15.4"
     <<: *lockdown
     environment:
       TZ: "Europe/Zurich"
@@ -88,19 +88,19 @@ To find out how you can change the default UID/GID of this container image, cons
 # MAIN TAGS 🏷️
 These are the main tags for the image. There is also a tag for each commit and its shorthand sha256 value.
 
-* [0.15.3](https://hub.docker.com/r/11notes/beszel/tags?name=0.15.3)
-* [0.15.3-unraid](https://hub.docker.com/r/11notes/beszel/tags?name=0.15.3-unraid)
+* [0.15.4](https://hub.docker.com/r/11notes/beszel/tags?name=0.15.4)
+* [0.15.4-unraid](https://hub.docker.com/r/11notes/beszel/tags?name=0.15.4-unraid)
 
 ### There is no latest tag, what am I supposed to do about updates?
-It is my opinion that the ```:latest``` tag is a bad habbit and should not be used at all. Many developers introduce **breaking changes** in new releases. This would messed up everything for people who use ```:latest```. If you don’t want to change the tag to the latest [semver](https://semver.org/), simply use the short versions of [semver](https://semver.org/). Instead of using ```:0.15.3``` you can use ```:0``` or ```:0.15```. Since on each new version these tags are updated to the latest version of the software, using them is identical to using ```:latest``` but at least fixed to a major or minor version. Which in theory should not introduce breaking changes.
+It is my opinion that the ```:latest``` tag is a bad habbit and should not be used at all. Many developers introduce **breaking changes** in new releases. This would messed up everything for people who use ```:latest```. If you don’t want to change the tag to the latest [semver](https://semver.org/), simply use the short versions of [semver](https://semver.org/). Instead of using ```:0.15.4``` you can use ```:0``` or ```:0.15```. Since on each new version these tags are updated to the latest version of the software, using them is identical to using ```:latest``` but at least fixed to a major or minor version. Which in theory should not introduce breaking changes.
 
 If you still insist on having the bleeding edge release of this app, simply use the ```:rolling``` tag, but be warned! You will get the latest version of the app instantly, regardless of breaking changes or security issues or what so ever. You do this at your own risk!
 
 # REGISTRIES ☁️
 ```
-docker pull 11notes/beszel:0.15.3
-docker pull ghcr.io/11notes/beszel:0.15.3
-docker pull quay.io/11notes/beszel:0.15.3
+docker pull 11notes/beszel:0.15.4
+docker pull ghcr.io/11notes/beszel:0.15.4
+docker pull quay.io/11notes/beszel:0.15.4
 ```
 
 # UNRAID VERSION 🟠
@@ -127,4 +127,4 @@ This image supports unraid by default. Simply add **-unraid** to any tag and the
 # ElevenNotes™️
 This image is provided to you at your own risk. Always make backups before updating an image to a different version. Check the [releases](https://github.com/11notes/docker-beszel/releases) for breaking changes. If you have any problems with using this image simply raise an [issue](https://github.com/11notes/docker-beszel/issues), thanks. If you have a question or inputs please create a new [discussion](https://github.com/11notes/docker-beszel/discussions) instead of an issue. You can find all my other repositories on [github](https://github.com/11notes?tab=repositories).
 
-*created 02.11.2025, 06:13:34 (CET)*
+*created 05.11.2025, 06:14:34 (CET)*
