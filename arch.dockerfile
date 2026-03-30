@@ -2,8 +2,9 @@
 # ║                       SETUP                         ║
 # ╚═════════════════════════════════════════════════════╝
 # :: GLOBAL
-  ARG APP_UID=1000 \
-      APP_GID=1000 \
+  ARG APP_UID= \
+      APP_GID= \
+      APP_GO_VERSION=0 \
       BUILD_ROOT=/go/beszel \
       BUILD_SRC=henrygd/beszel.git
   ARG BUILD_BIN=/hub
@@ -16,7 +17,7 @@
 # ║                       BUILD                         ║
 # ╚═════════════════════════════════════════════════════╝
 # :: BESZEL
-  FROM 11notes/go:1.25 AS build
+  FROM 11notes/go:${APP_GO_VERSION} AS build
   ARG APP_VERSION \
       APP_ROOT \
       BUILD_ROOT \
